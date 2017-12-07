@@ -1,0 +1,105 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!-- VIEWPORT - faz o redimensionamento da tela para CELULAR de qq tamanho -->
+	<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<script language="javascript" type="text/javascript">
+function closeWin() {close();}
+
+function validar() {
+var pontos = 0;
+var msg = "";
+var q1 = form1.p1.value;
+var q2 = form1.p2.value;
+var q3 = form1.p3.value;
+var q4 = form1.p4.value;
+var q5 = form1.p5.value;
+var q6 = form1.p6.value;
+var q7 = form1.p6.value;
+if(q1==4) {
+ pontos++;
+ msg += "\nAcertou a questão 1";
+}
+if(q2==4) {
+ pontos++;
+ msg += "\nAcertou a questão 2";
+}
+if(q3==3) {
+ pontos++;
+ msg += "\nAcertou a questão 3";
+}
+if(q4==2) {
+ pontos++;
+ msg += "\nAcertou a questão 4";
+}
+if(q5==3) {
+ pontos++;
+ msg += "\nAcertou a questão 5";
+}
+if(q6==2) {
+ pontos++;
+ msg += "\nAcertou a questão 5";
+}
+if(q7==4) {
+ pontos++;
+ msg += "\nAcertou a questão 5";
+}
+alert("Acertos: " + pontos + msg);
+}
+</script>
+</head>
+<body>
+<fieldset>
+	<legend>Questionário 1 de Arquitetura e Organização de Computadores</legend>
+	<form name="form1"> 
+		<p>1. Quais são os principais componentes de um computador?</p>
+		<input type="radio" name="p1" value="1">Processador, Memória ROM, Disquete.<br>
+		<input type="radio" name="p1" value="2">Teclado, Mouse e Drive de DVD.<br>
+		<input type="radio" name="p1" value="3">Windows, Linux, Antivirus.<br>
+		<input type="radio" name="p1" value="4">Processador, Memórias e Armazenamento.<BR>
+		<br>
+		<p>2. O que são Mainframes?</p>
+		<input type="radio" name="p2" value="1">É um tipo de componente do computador.<br>
+		<input type="radio" name="p2" value="2">É um dispositivo que controla as operações matemáticas de um computador.<br>
+		<input type="radio" name="p2" value="3">É uma parte da placa-mãe.<br>
+		<input type="radio" name="p2" value="4">É um tipo de computador de grande porte.<BR>
+		<br>
+		<p>3. Não são periféricos de um computador:</p>
+		<input type="radio" name="p3" value="1">Monitor de vídeo, teclado, mouse.<BR>
+		<input type="radio" name="p3" value="2">Caixas de som, Joystick, impressora.<BR>
+		<input type="radio" name="p3" value="3">Gabinete, placa-mãe, processador.<BR>
+		<input type="radio" name="p3" value="4">Data show, scanner, webcam.<BR>
+		<br>
+		<p>4. Como modemos descrever a placa-mãe?</p>
+		<input type="radio" name="p4" value="1">Placa principal que gera todas as placas do computador.<BR>
+		<input type="radio" name="p4" value="2">Conjunto de componentes que interligam todos os sistemas do computador.<BR>
+		<input type="radio" name="p4" value="3">Principal periférico a ser ligado em um computador novo.<BR>
+		<input type="radio" name="p4" value="4">Sistema operacional que permite o funcionamento do computador.<BR>
+		<br>
+		<p>5. Qual dos seguintes itens abaixo pode ser considerado um dispositivo de entrada e de saída?</p>
+		<input type="radio" name="p5" value="1">Caneta digital.<br>
+		<input type="radio" name="p5" value="2">Mouse gamer.<br>
+		<input type="radio" name="p5" value="3">Monitor toutch-screen.<br>
+		<input type="radio" name="p5" value="4">Data-show.<BR>
+		<br>
+		<p>6. Porque o dispositivo acima pode ser considerado de entrada e saída?</p>
+		<input type="radio" name="p6" value="1">Porque podemos escrever com a caneta e já ver o resultado na tela.<br>
+		<input type="radio" name="p6" value="3">Porque podemos inserir dados através do toque na tela ao mesmo tempo que vemos a saída de imagem.<br>
+		<input type="radio" name="p6" value="4">Porque temos a saída da iformação no projetor à medida de entramos com os slides na tela.<BR>
+		<input type="radio" name="p6" value="2">Porque ao usarmos o mouse pra jogos, o jogo já mostra a saída imediatamente com maior precisão.<br>
+		<br>
+		<p>7. O que significa RAM?</p>
+		<input type="radio" name="p7" value="1">Tipo de caminhonete fabricada pela Dodge.<br>
+		<input type="radio" name="p7" value="3">Rapid Access Mainframe ou Computador de Acesso Rápido.<br>
+		<input type="radio" name="p7" value="4">Random Access Memory ou Memória de Acesso Aleatório.<BR>
+		<input type="radio" name="p7" value="2">Read Access Memory ou Memória de Acesso para Leitura.<br>
+		<br>
+		</form>
+	  </fieldset>
+	<input class="botao" type="button" value="Corrigir" onclick="return validar()">
+	<input class="botao" type="button" value="Sair" onclick="closeWin()">
+	<BR><BR>
+  </body>
+</html>
+

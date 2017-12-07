@@ -1,0 +1,82 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!-- VIEWPORT - faz o redimensionamento da tela para CELULAR de qq tamanho -->
+	<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<script language="javascript" type="text/javascript">
+function closeWin() {close();}
+
+function validar() {
+var pontos = 0;
+var msg = "";
+var q1 = form1.p1.value;
+var q2 = form1.p2.value;
+var q3 = form1.p3.value;
+var q4 = form1.p4.value;
+var q5 = form1.p5.value;
+if(q1==1) {
+ pontos++;
+ msg += "\nAcertou a questão 1";
+}
+if(q2==3) {
+ pontos++;
+ msg += "\nAcertou a questão 2";
+}
+if(q3==2) {
+ pontos++;
+ msg += "\nAcertou a questão 3";
+}
+if(q4==4) {
+ pontos++;
+ msg += "\nAcertou a questão 4";
+}
+if(q5==4) {
+ pontos++;
+ msg += "\nAcertou a questão 5";
+}
+alert("Acertos: " + pontos + msg);
+}
+</script>
+</head>
+<body>
+<fieldset>
+<legend>Questionário 1 de Sistemas Operacionais</legend>
+<form name="form1"> 
+<p>1. Qual foi o primeiro sistema operacional da Microsoft a possuir uma interface gráfica?</p>
+<input type="radio" name="p1" value="1">Windows 95<br>
+<input type="radio" name="p1" value="2">Windows 3.x<br>
+<input type="radio" name="p1" value="3">Windows NT<br>
+<input type="radio" name="p1" value="4">Windows ME<br>
+<br>
+<p>2. O que é um sistema operacional?</p>
+<input type="radio" name="p2" value="1">É um tipo de componente do computador.<br>
+<input type="radio" name="p2" value="2">É um dispositivo que controla as operações matemáticas de um computador.<br>
+<input type="radio" name="p2" value="3">É o software ou programa mais importante que é executado em um computador, é ele quem dá a possibilidade de usarmos e dar ordens ao mesmo.<br>
+<input type="radio" name="p2" value="4">É uma estrututa de arquivos incorporadas ao hardware do computador.<br>
+<br>
+<p>3. Complete a frase: "O Kernel é considerado o _________ do sistema operacional":</p>
+<input type="radio" name="p3" value="1">Coração<br>
+<input type="radio" name="p3" value="2">Cérebro<br>
+<input type="radio" name="p3" value="3">Hardware mais importante<br>
+<input type="radio" name="p3" value="4">Periférico controlador<br>
+<br>
+<p>4. O sistema linux foi lançado em qual ano?</p>
+<input type="radio" name="p4" value="1">1990
+<input type="radio" name="p4" value="2">1996
+<input type="radio" name="p4" value="3">1993
+<input type="radio" name="p4" value="4">1991
+<br>
+<p>5. O que é um sistema operacional multitarefa?</p>
+<input type="radio" name="p5" value="1">É um programa que escalona processos de forma paralela<br>
+<input type="radio" name="p5" value="2">É o sistema que gerencia vários componentes do hardware de forma simultânea.<br>
+<input type="radio" name="p5" value="3">É um tipo de sistema que opera apenas uma tarefa por vez.<br>
+<input type="radio" name="p5" value="4">É a característica do sistema operativo que permite repartir a utilização do processador entre várias tarefas aparentemente simultâneas.<br>
+<br>
+		</form>
+	  </fieldset>
+	<input class="botao" type="button" value="Corrigir" onclick="return validar()">
+	<input class="botao" type="button" value="Sair" onclick="closeWin()">
+	<BR><BR>
+  </body>
+</html>

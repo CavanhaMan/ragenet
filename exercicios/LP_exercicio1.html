@@ -1,0 +1,82 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<!-- VIEWPORT - faz o redimensionamento da tela para CELULAR de qq tamanho -->
+	<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<script language="javascript" type="text/javascript">
+function closeWin() {close();}
+
+			function validar() {
+				var pontos = 0;
+				var msg = "";
+				var q1 = form1.p1.value;
+				var q2 = form1.p2.value;
+				var q3 = form1.p3.value;
+				var q4 = form1.p4.value;
+				var q5 = form1.p5.value;
+				if(q1==3) {
+					 pontos++;
+					 msg += "\nAcertou a questão 1";
+				}
+				if(q2==4) {
+					 pontos++;
+					 msg += "\nAcertou a questão 2";
+				}
+				if(q3==2) {
+					 pontos++;
+					 msg += "\nAcertou a questão 3";
+				}
+				if(q4==2) {
+					 pontos++;
+					 msg += "\nAcertou a questão 4";
+				}
+				if(q5==1) {
+					 pontos++;
+					 msg += "\nAcertou a questão 5";
+				}
+					alert("Acertos: " + pontos + msg);
+			}
+		</script>
+	</head>
+	<body>
+	<fieldset>
+		<legend>Questionário 1 de Lógica de Programação</legend>
+		<form name="form1"> 
+		<p>1. Para que o programa entre na estrutura condicional a condição proposta deve ser:</p>
+		<input type="radio" name="p1" value="1">Falsa<br>
+		<input type="radio" name="p1" value="2">Indiferente<br>
+		<input type="radio" name="p1" value="3">Verdadeira<br>
+		<input type="radio" name="p1" value="4">Nula<br>
+		<br>
+		<p>2. Quais destes comandos são usados em estruturas condicioanais: </p>
+		<input type="radio" name="p2" value="1">For/ While<br>
+		<input type="radio" name="p2" value="2">java / Inicio / Fim <br>
+		<input type="radio" name="p2" value="3">Switch / Case <br>
+		<input type="radio" name="p2" value="4">if / else if <br>
+		<br>
+		<p>3. Qual comando determina o início de um de uma estrutura condicional?</p>
+		<input type="radio" name="p3" value="1">else<br>
+		<input type="radio" name="p3" value="2">if<br>
+		<input type="radio" name="p3" value="3">for<br>
+		<input type="radio" name="p3" value="4">while<br>	
+		<br>
+		<p>4. Quais os tipos de estruturas condicioanais? </p>
+		<input type="radio" name="p4" value="1">Simples / Paralela<br>
+		<input type="radio" name="p4" value="2">Simples / Composta<br>
+		<input type="radio" name="p4" value="3">Dupla / Composta<br>
+		<input type="radio" name="p4" value="4">Rápida / Lenta
+		<br>
+		<p>5. Quantas estruturas condicionais podem ser usadas em um programa?</p>
+		<input type="radio" name="p5" value="1">Quantas forem necessárias <br>
+		<input type="radio" name="p5" value="2">Somemente 10 por classe <br>
+		<input type="radio" name="p5" value="3">Somente duas <br>
+		<input type="radio" name="p5" value="4">Uma em cada Classe<br>
+		<br>
+		</form>
+	  </fieldset>
+	<input class="botao" type="button" value="Corrigir" onclick="return validar()">
+	<input class="botao" type="button" value="Sair" onclick="closeWin()">
+	<BR><BR>
+  </body>
+</html>

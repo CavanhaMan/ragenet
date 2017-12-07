@@ -1,0 +1,82 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<!-- VIEWPORT - faz o redimensionamento da tela para CELULAR de qq tamanho -->
+	<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<script language="javascript" type="text/javascript">
+function closeWin() {close();}
+
+			function validar() {
+				var pontos = 0;
+				var msg = "";
+				var q1 = form1.p1.value;
+				var q2 = form1.p2.value;
+				var q3 = form1.p3.value;
+				var q4 = form1.p4.value;
+				var q5 = form1.p5.value;
+				if(q1==3) {
+					 pontos++;
+					 msg += "\nAcertou a questão 1";
+				}
+				if(q2==2) {
+					 pontos++;
+					 msg += "\nAcertou a questão 2";
+				}
+				if(q3==1) {
+					 pontos++;
+					 msg += "\nAcertou a questão 3";
+				}
+				if(q4==4) {
+					 pontos++;
+					 msg += "\nAcertou a questão 4";
+				}
+				if(q5==1) {
+					 pontos++;
+					 msg += "\nAcertou a questão 5";
+				}
+					alert("Acertos: " + pontos + msg);
+			}
+		</script>
+	</head>
+	<body>
+	<fieldset>
+		<legend>Questionário 2 de Lógica de Programação</legend>
+		<form name="form1"> 
+		<p>1. Assinale a o opção onde contenha somente operações de entruturas repetitivas.</p>
+		<input type="radio" name="p1" value="1">While , Do While, If<br>
+		<input type="radio" name="p1" value="2">Do while, for, If<br>
+		<input type="radio" name="p1" value="3">While, Do While, For<br>
+		<input type="radio" name="p1" value="4">If, Switch Case, For
+		<br>
+		<p>2. Para que o programe "saia" do loop de repetição, a condição definida deve ser: </p>
+		<input type="radio" name="p2" value="1">Verdadeira<br>
+		<input type="radio" name="p2" value="2">Falsa <br>
+		<input type="radio" name="p2" value="3">Nula <br>
+		<input type="radio" name="p2" value="4">Indiferente 
+		<br>
+		<p>3. Qual a melhor estrutura para usar, quando já sabemos o numero de repetições que o programa deve executar?</p>
+		<input type="radio" name="p3" value="1">for <br>
+		<input type="radio" name="p3" value="2">While <br>
+		<input type="radio" name="p3" value="3">Do While <br>
+		<input type="radio" name="p3" value="4">If
+		<br>
+		<p>4. Qual estrutura que verifica a condição antes de entrar no loop? </p>
+		<input type="radio" name="p4" value="1">If<br>
+		<input type="radio" name="p4" value="2">For<br>
+		<input type="radio" name="p4" value="3">Do While<br>
+		<input type="radio" name="p4" value="4">while
+		<br>
+		<p>5. Qual estrutura que verifica a condição depois de entrar no loop? </p>
+		<input type="radio" name="p5" value="1">If<br>
+		<input type="radio" name="p5" value="2">For<br>
+		<input type="radio" name="p5" value="3">Do While<br>
+		<input type="radio" name="p5" value="4">while
+		<br>
+		</form>
+	  </fieldset>
+	<input class="botao" type="button" value="Corrigir" onclick="return validar()">
+	<input class="botao" type="button" value="Sair" onclick="closeWin()">
+	<BR><BR>
+  </body>
+</html>

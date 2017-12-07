@@ -1,0 +1,94 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<!-- VIEWPORT - faz o redimensionamento da tela para CELULAR de qq tamanho -->
+	<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<script language="javascript" type="text/javascript">
+function closeWin() {close();}
+
+			function validar() {
+				var pontos = 0;
+				var msg = "";
+				var q1 = form1.p1.value;
+				var q2 = form1.p2.value;
+				var q3 = form1.p3.value;
+				var q4 = form1.p4.value;
+				var q5 = form1.p5.value;
+				if(q1==1) {
+					 pontos++;
+					 msg += "\nAcertou a questão 1";
+				}
+				if(q2==4) {
+					 pontos++;
+					 msg += "\nAcertou a questão 2";
+				}
+				if(q3==2) {
+					 pontos++;
+					 msg += "\nAcertou a questão 3";
+				}
+				if(q4==4) {
+					 pontos++;
+					 msg += "\nAcertou a questão 4";
+				}
+				if(q5==3) {
+					 pontos++;
+					 msg += "\nAcertou a questão 5";
+				}
+					alert("Acertos: " + pontos + msg);
+			}
+		</script>
+	</head>
+	<body>
+	<fieldset>
+	
+	<legend>Questionário 1 de Metodologia Científica</legend>
+	<b>Leia os textos abaixo.</b><br>
+
+<b>Duas visões sobre “O Senhor dos Anéis, parte 2”.</b><br><br>
+<b>Texto 1</b><br>
+Continua sendo a saga de Frodo Bolseiro e seus amigos – Sam, Aragorn, Legolas e Gimli. [...] Estabelece-se no segundo filme, a ligação entre Frodo e o Gollum, que não é outro senão Sméagol, corrompido pela força destrutiva do anel. Gollum/Sméagol é um prodígio de técnica, um ser virtual criado no computador a partir de interpretação de um ator, Andy Serkis. Como no primeiro filme, a técnica é grandiosa, mas não é o que importa. É colocada totalmente a serviço da história. Desde que os hippies começaram a viajar na saga de Frodo, nos anos 1960, muita gente colocou a etiqueta do ‘esoterismo’ na obra de Tolkien. É um movimento reducionista, de quem nunca leu, ou leu só superficialmente, a série de livros. Jackson tomou muita liberdade em relação ao original. O filme é uma experiência e tanto, ética, estética, humanística. Trata de todos os temas: amizade, amor, ambição, honra, dedicação, coragem, vida e morte. Incorpora o próprio elemento narrativo, na medida em que Frodo e Sam, no fim, sonham com suas aventuras imortalizadas na imaginação popular. Até ao afastar-se do Tolkien, Jackson é fiel ao autor. Criou um movimento que justifica sozinho, o cinemão.<br><br>
+
+<b>Texto 2</b><br><br>
+O Senhor dos Anéis tem dois tipos de espectadores: os tolkienmaníacos e os outros. Os primeiros, calejados na leitura do universo delirante de J. R. R. Tolkien, chegam preparados para qualquer eventualidade, pois estão familiarizados com o mundo mágico do autor. O filme terá para eles valor ilustrativo. Dos segundos, que não têm intimidade com topônimos e seres como Isengard, ents, hobbits, elfos e orgs, será exigido esforço maior. Peter Jackson [...] realizou com folgas um épico de visual suntuoso. Neste segundo episódio, já fenômeno de bilheteria, a ênfase é nas batalhas. Para quem se impressiona com combates digitais, trata-se de um prato e tanto. Já a narrativa, que afinal tem de evoluir entre uma batalha e outra, parece bem mais modesta. Vista de perto, descobre-se a velha e boa estrutura formal que se convencionou chamar de ‘jornada do herói’, com o protagonista sendo lançado à aventura, hesitando, correndo riscos, encontrando antagonistas e aliados e depois salvando o mundo e a si mesmo. Luta do Bom contra o Mal, à moda do presidente Bush. Ou seja, muito barulho por nada.  
+(O Estado de S. Paulo, 27 dez. 2002.)
+
+		
+		<form name="form1"> 
+		<p>1. Sobre o filme O Senhor dos Anéis, esses dois textos apresentam opiniões</p>
+		<input type="radio" name="p1" value="1">diferentes<br>
+		<input type="radio" name="p1" value="2">emotivas<br>
+		<input type="radio" name="p1" value="3">iguais<br>
+		<input type="radio" name="p1" value="4">imparciais
+		<br>
+		<p>2. O Texto 2 tem como finalidade:</p>
+		<input type="radio" name="p2" value="1">contar uma história.<br>
+		<input type="radio" name="p2" value="2">dar uma informação.<br>
+		<input type="radio" name="p2" value="3">divulgar um filme.<br>
+		<input type="radio" name="p2" value="4">fazer uma análise crítica.
+		<br>
+		<p>3. Segundo o Texto 2, para os tolkienmaníacos, o filme O Senhor dos Anéis</p>
+		<input type="radio" name="p3" value="1">exigirá um esforço maior.<br>
+		<input type="radio" name="p3" value="2">será meramente ilustrativo<br>
+		<input type="radio" name="p3" value="3">será uma eventualidade.<br>
+		<input type="radio" name="p3" value="4"> trará uma leitura delirante
+		<br>
+		<p>4. No Texto 2, no trecho “Para quem se impressiona com combates digitais, trata-se de um prato e tanto.” , a expressão destaca foi usada para</p>
+		<input type="radio" name="p4" value="1">apresentar um exagero.<br>
+		<input type="radio" name="p4" value="2">destacar uma qualidade.<br>
+		<input type="radio" name="p4" value="3">fazer uma comparação.<br>
+		<input type="radio" name="p4" value="4">intensificar uma informação.
+		<br>
+		<p>5. No Texto 2, no trecho “... preparados para qualquer eventualidade, pois estão familiarizados com o mundo mágico...” a palavra destacada estabelece uma relação de</p>
+		<input type="radio" name="p5" value="1">alternância <br>
+		<input type="radio" name="p5" value="2">condição<br>
+		<input type="radio" name="p5" value="3">explicação<br>
+		<input type="radio" name="p5" value="4">finalidade
+		<br>
+		</form>
+	  </fieldset>
+	<input class="botao" type="button" value="Corrigir" onclick="return validar()">
+	<input class="botao" type="button" value="Sair" onclick="closeWin()">
+	<BR><BR>
+  </body>
+</html>

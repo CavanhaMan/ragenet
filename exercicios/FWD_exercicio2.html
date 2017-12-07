@@ -1,0 +1,83 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!-- VIEWPORT - faz o redimensionamento da tela para CELULAR de qq tamanho -->
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+<script language="javascript" type="text/javascript">
+function closeWin() {close();}
+
+
+function validar() {
+var pontos = 0;
+var msg = "";
+var q1 = form1.p1.value;
+var q2 = form1.p2.value;
+var q3 = form1.p3.value;
+var q4 = form1.p4.value;
+var q5 = form1.p5.value;
+if(q1==1) {
+ pontos++;
+ msg += "\nAcertou a questão 1";
+}
+if(q2==3) {
+ pontos++;
+ msg += "\nAcertou a questão 2";
+}
+if(q3==2) {
+ pontos++;
+ msg += "\nAcertou a questão 3";
+}
+if(q4==4) {
+ pontos++;
+ msg += "\nAcertou a questão 4";
+}
+if(q5==4) {
+ pontos++;
+ msg += "\nAcertou a questão 5";
+}
+alert("Acertos: " + pontos + msg);
+}
+</script>
+</head>
+<body>
+<fieldset>
+<legend>Questionário 2 Fundamentos de Web Design I</legend>
+<form name="form1"> 
+<p>1. Qual destes não é um programa utilizado para escrever um código HTML</p>
+<input type="radio" name="p1" value="1">Excel
+<input type="radio" name="p1" value="2">Bloco de notas
+<input type="radio" name="p1" value="3">Notepad++
+<input type="radio" name="p1" value="4">Dreamweaver<br>
+<br>
+<p>2. O que é um domínio?</p>
+<input type="radio" name="p2" value="1">É um tipo de hospedagem para sites.<br>
+<input type="radio" name="p2" value="2">É um código de desenvolvimento de websites, utilizado em várias plataformas.<br>
+<input type="radio" name="p2" value="3">É a base de toda a sua identificação profissional na internet.É o “nome” do seu site e dos seus e-mails.<br>
+<input type="radio" name="p2" value="4">É um tipo de software para criar um site.
+<br>
+<p>3. Qual ferramenta pode ser utilizada apenas online para criação de sites?</p>
+<input type="radio" name="p3" value="1">Geocities
+<input type="radio" name="p3" value="2">Blogger
+<input type="radio" name="p3" value="3">Notepad++
+<input type="radio" name="p3" value="4">Dreamweaver<br>
+<br>
+<p>4. Como podemos visualizar um site que escrevemos no bloco de notas?</p>
+<input type="radio" name="p4" value="1">Digitando o caminho do site diretamente no nome do arquivo.<br>
+<input type="radio" name="p4" value="2">Salvando o código no word.<br>
+<input type="radio" name="p4" value="3">Arrastando o arquivo txt para o chrome.<br>
+<input type="radio" name="p4" value="4">Basta salvar o código com a extensão ".html" e abrí-lo em algum browser.<br>
+<br>
+<p>5. O que é Hospedagem?</p>
+<input type="radio" name="p5" value="1">É um site que grava seu código e publica na plataforma wordpress.<br>
+<input type="radio" name="p5" value="2">É um FTP para download de arquivos html.<br>
+<input type="radio" name="p5" value="3">É um serviço de armazenamento que funciona como nuvem. <br>
+<input type="radio" name="p5" value="4">É o serviço de armazenamento de um site e disponibilização constante do mesmo na internet, possibilitando que ele seja acessado 24 horas por dia.<br>
+<br>
+		</form>
+	  </fieldset>
+	<input class="botao" type="button" value="Corrigir" onclick="return validar()">
+	<input class="botao" type="button" value="Sair" onclick="closeWin()">
+	<BR><BR>
+  </body>
+</html>

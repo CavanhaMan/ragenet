@@ -1,0 +1,31 @@
+Adriel:	
+FWD1	ok
+VIDEO1	https://www.youtube.com/embed/RCagJFzZ_9k
+VIDEO2	https://www.youtube.com/embed/SZZnGdKS2YI
+
+SO	ok
+VIDEO1	https://www.youtube.com/embed/eLdTsZGU_6E
+VIDEO2	https://www.youtube.com/embed/fMHgesjUIJM
+	
+Gustavo:	
+LP	ok
+VIDEO1	https://www.youtube.com/embed/BVMpCaFCpjc
+VIDEO2	https://www.youtube.com/embed/oikHznV0unA
+
+MC	
+VIDEO1	https://www.youtube.com/embed/XJzOi_qQy-0
+VIDEO2	https://www.youtube.com/embed/n7-gITiMxG4
+	
+Rodrigo:	
+AOC	OK
+VIDEO1	https://www.youtube.com/embed/gUtZNoLEaMk
+VIDEO2	https://www.youtube.com/embed/EzTKw23hAJU
+
+INGLES	ok
+VIDEO1	https://www.youtube.com/embed/pq206Fd7qlc
+VIDEO2	https://www.youtube.com/embed/efS9tiXHmQM
+
+
+
+Para inserir no site:
+<iframe src="https://www.youtube.com/embed/RCagJFzZ_9k"></iframe>

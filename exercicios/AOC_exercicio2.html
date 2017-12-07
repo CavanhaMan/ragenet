@@ -1,0 +1,83 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!-- VIEWPORT - faz o redimensionamento da tela para CELULAR de qq tamanho -->
+	<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<script language="javascript" type="text/javascript">
+function closeWin() {close();}
+
+function validar() {
+var pontos = 0;
+var msg = "";
+var q1 = form1.p1.value;
+var q2 = form1.p2.value;
+var q3 = form1.p3.value;
+var q4 = form1.p4.value;
+var q5 = form1.p5.value;
+if(q1==1) {
+ pontos++;
+ msg += "\nAcertou a questão 1";
+}
+if(q2==4) {
+ pontos++;
+ msg += "\nAcertou a questão 2";
+}
+if(q3==1) {
+ pontos++;
+ msg += "\nAcertou a questão 3";
+}
+if(q4==4) {
+ pontos++;
+ msg += "\nAcertou a questão 4";
+}
+if(q5==3) {
+ pontos++;
+ msg += "\nAcertou a questão 5";
+}
+alert("Acertos: " + pontos + msg);
+}
+</script>
+</head>
+<body>
+  <fieldset>
+	<legend>Questionário 2 de Arquitetura e Organização de Computadores</legend>
+		<form name="form1"> 
+			<p>1. Marque a opção incorreta:</p>
+			<input type="radio" name="p1" value="1">Sistema decimal utiliza 10 dígitos, o 1 e o 0.<br>
+			<input type="radio" name="p1" value="2">Sistema binário utiliza 10<sub>(2)</sub> dígitos, em binário.<br>
+			<input type="radio" name="p1" value="3">Sistema octal possui 8 digitos, de 0 a 7.<br>
+			<input type="radio" name="p1" value="4">Sistema hexadecimal utiliza letras e números para contar até 15.<BR>
+			<br>
+			<p>2. Marque qual opção abaixo não é um número em binário.</p>
+			<input type="radio" name="p2" value="1">00000000.
+			<input type="radio" name="p2" value="2">01010111.
+			<input type="radio" name="p2" value="3">10.00001.
+			<input type="radio" name="p2" value="4">10180010.<BR>
+			<br>
+			<p>3. Em relação aos binários, marque a opção incorreta:</p>
+			<input type="radio" name="p3" value="1">Como utilizamos zeros e uns, a quantidade de números que podem ser representados é limitada.<BR>
+			<input type="radio" name="p3" value="2">Utilizamos zeros e uns porque o computador em sua base só consegue entender binário.<BR>
+			<input type="radio" name="p3" value="3">Podemos realizar operações matemáticas com números binários, como soma, subtração, divisão e multiplicação.<BR>
+			<input type="radio" name="p3" value="4">Eu posso contar até o infinito utilizando binários.<BR>
+			<br>
+			<p>4. Quais dispositivos abaixo não utilizam binário?</p>
+			<input type="radio" name="p4" value="1">DVD.
+			<input type="radio" name="p4" value="2">CD.
+			<input type="radio" name="p4" value="3">Pendrive.
+			<input type="radio" name="p4" value="4">Caixas de som.<BR>
+			<br>
+			<p>5. Marque a afirmativa correta:</p>
+			<input type="radio" name="p5" value="1">Para aumentar o valor do binário, basta acrescentar zeros à esquerda.<br>
+			<input type="radio" name="p5" value="2">Só posso usar o binário para contar até 31<sub>(10)</sub> = 11111<sub>(2)</sub>.<br>
+			<input type="radio" name="p5" value="3">Com binários não há limites na representação de numeros e textos.<br>
+			<input type="radio" name="p5" value="4">O sistema binário é o único sistema numérico utilizado nos computadores.<BR>
+			<br>
+		</form>
+	  </fieldset>
+	<input class="botao" type="button" value="Corrigir" onclick="return validar()">
+	<input class="botao" type="button" value="Sair" onclick="closeWin()">
+	<BR><BR>
+  </body>
+</html>
+

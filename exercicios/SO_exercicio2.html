@@ -1,0 +1,82 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!-- VIEWPORT - faz o redimensionamento da tela para CELULAR de qq tamanho -->
+	<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<script language="javascript" type="text/javascript">
+function closeWin() {close();}
+
+function validar() {
+var pontos = 0;
+var msg = "";
+var q1 = form1.p1.value;
+var q2 = form1.p2.value;
+var q3 = form1.p3.value;
+var q4 = form1.p4.value;
+var q5 = form1.p5.value;
+if(q1==4) {
+ pontos++;
+ msg += "\nAcertou a questão 1";
+}
+if(q2==2) {
+ pontos++;
+ msg += "\nAcertou a questão 2";
+}
+if(q3==4) {
+ pontos++;
+ msg += "\nAcertou a questão 3";
+}
+if(q4==1) {
+ pontos++;
+ msg += "\nAcertou a questão 4";
+}
+if(q5==3) {
+ pontos++;
+ msg += "\nAcertou a questão 5";
+}
+alert("Acertos: " + pontos + msg);
+}
+</script>
+</head>
+<body>
+<fieldset>
+<legend>Questionário 2 de Sistemas Operacionais</legend>
+<form name="form1"> 
+<p>1. Foi a característica principal do windows 3.x:</p>
+<input type="radio" name="p1" value="1">Criação do office.<br>
+<input type="radio" name="p1" value="2">Leitura de arquivos multimidia.<br>
+<input type="radio" name="p1" value="3">Criação do MS-DOS.<br>
+<input type="radio" name="p1" value="4">A aparição de uma interface gráfica.<br>
+<br>
+<p>2. Qual foi o primeiro sistema operacional a apresentar o sistema de plug and play?</p>
+<input type="radio" name="p2" value="1">Windows 2000
+<input type="radio" name="p2" value="2">Windows 95
+<input type="radio" name="p2" value="3">Windows 98
+<input type="radio" name="p2" value="4">Windows ME<br>
+<br>
+<p>3. Foi o primeiro sistema a ter suporte USB:</p>
+<input type="radio" name="p3" value="1">Windows Vista
+<input type="radio" name="p3" value="2">Windwos XP
+<input type="radio" name="p3" value="3">Windows 3.x
+<input type="radio" name="p3" value="4">Windows 98<br>
+<br>
+<p>4. Complete a frase: "Para utilizar o windows 98 eram necessários _______ de disco rígido."</p>
+<input type="radio" name="p4" value="1">32 GB
+<input type="radio" name="p4" value="2">16 GB
+<input type="radio" name="p4" value="3">80 GB
+<input type="radio" name="p4" value="4">8 GB<br>
+<br>
+<p>5. Qual das opções abaixo não é uma vantagem do linux?</p>
+<input type="radio" name="p5" value="1">Estabilidade.<br>
+<input type="radio" name="p5" value="2">Gratuidade<br>
+<input type="radio" name="p5" value="3">Necessidade de conhecimento intermediário para utilização do SO.<br>
+<input type="radio" name="p5" value="4">Desempenho.<br>
+<br>
+		</form>
+	  </fieldset>
+	<input class="botao" type="button" value="Corrigir" onclick="return validar()">
+	<input class="botao" type="button" value="Sair" onclick="closeWin()">
+	<BR><BR>
+  </body>
+</html>
